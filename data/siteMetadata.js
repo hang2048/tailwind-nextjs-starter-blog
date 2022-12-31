@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'HANG BLOG',
+  title: 'HLOG',
   author: 'HANG·南通秃头干饭王',
   headerTitle: 'Hangs_Blog',
   description: 'Record the World and Depict Life',
