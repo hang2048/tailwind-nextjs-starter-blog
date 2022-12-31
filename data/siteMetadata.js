@@ -10,12 +10,12 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  email: 'lzh20202002@gmail.com',
+  github: 'https://github.com/hang2048',
+  twitter: 'https://twitter.com/tuitejiushifjb',
   facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  youtube: 'https://www.youtube.com/@hang_log',
+  linkedin: 'https://www.linkedin.com/in/%E8%88%AA-%E8%88%AA-b0038b260/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
