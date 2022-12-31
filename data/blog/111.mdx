@@ -1,124 +1,76 @@
 ---
-
-title: Notion注册以及升级Pro计划实操干货
-date: '2022-12-22'
-tags: ['Design, ', 'Sociology', 'Website']
+title: Images in Next.js
+date: '2020-11-11'
+tags: ['next js', 'guide']
 draft: false
-
-summary: Example of a markdown file with code blocks and syntax highlighting
-
+summary: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+authors: ['sparrowhawk']
 ---
 
-[https://indify.co/widgets/live/countdown/MRGF7DAgAjV9EnOiAgsI](https://indify.co/widgets/live/countdown/MRGF7DAgAjV9EnOiAgsI)
+# Introduction
 
-## 注册登录准备
+The tailwind starter blog has out of the box support for [Next.js's built-in image component](https://nextjs.org/docs/api-reference/next/image) and automatically swaps out default image tags in markdown or mdx documents to use the Image component provided.
 
-①网站准备：
+# Usage
 
-1. Notion官网     [https://www.notion.so（链接直达）](https://www.notion.so/)  【国内网络环境即可进行正常访问】
+To use in a new page route / javascript file, simply import the image component and call it e.g.
 
-2. Outlook官网   [https://outlook.com(链接直达)](https://outlook.office.com/)  【国内网络环境即可进行正常访问】
+```js
+import Image from 'next/image'
 
-> ```markdown
-> 💡 【两网站亲测国内网络均可注册登录，登陆不上去是你网络的问题】                                                        【或许你用的是垃圾校园网可能DNS被污染了】
-> ```
+function Home() {
+  return (
+    <>
+      <h1>My Homepage</h1>
+      <Image src="/me.png" alt="Picture of the author" width={500} height={500} />
+      <p>Welcome to my homepage!</p>
+    </>
+  )
+}
 
-②邮箱账号准备：有可通过Edu升级到Personal Pro计划权限的邮箱账号
-
-```markdown
-💡  【默认账号均可以进行下面操作。需要联系TG或微信**xhx6699888**，￥5自定义永久使用】
+export default Home
 ```
 
-③打开此页教程
+For a markdown file, the default image tag can be used and the default `img` tag gets replaced by the `Image` component in the build process.
 
-```markdown
-💡  【如果图片全都加载不出来，那就得挂梯子使用，Notion的图床经常抽风】
-```
-
-## 开始注册
-
-#### 1.[点击进入](https://www.notion.so)网站登录/注册界面，输入邮箱并发送验证码。
-
-[![pS9QpI1.png](https://s1.ax1x.com/2022/12/31/pS9QpI1.png)](https://imgse.com/i/pS9QpI1)
-
-#### 2.打开[Outlook邮箱官网](https://outlook.com)，找到Notion官方发给你的验证邮件，复制验证并返回。
-
-[![pS9QiRK.png](https://s1.ax1x.com/2022/12/31/pS9QiRK.png)](https://imgse.com/i/pS9QiRK)
-
-#### 3.粘贴验证码，并点击新建账户。设置好昵称以及密码并牢牢记住！！（吸烟刻肺）
-
-[![pS9Mjr4.png](https://s1.ax1x.com/2022/12/31/pS9Mjr4.png)](https://imgse.com/i/pS9Mjr4)
-
-[![pS9MLxU.png](https://s1.ax1x.com/2022/12/31/pS9MLxU.png)](https://imgse.com/i/pS9MLxU)
-
-#### 4.设置使用计划并填写选择信息。
-
-[![pS9MzZ9.png](https://s1.ax1x.com/2022/12/31/pS9MzZ9.png)](https://imgse.com/i/pS9MzZ9)
-
-[![pS9QVqH.png](https://s1.ax1x.com/2022/12/31/pS9QVqH.png)](https://imgse.com/i/pS9QVqH)
-
-#### 5.注册成功！！
-
-[![pS9QnII.png](https://s1.ax1x.com/2022/12/31/pS9QnII.png)](https://imgse.com/i/pS9QnII)
-
-## 升级为pro计划
-
-### 1.按图操作（配合前面食用）
-
-[![pS9QKit.png](https://s1.ax1x.com/2022/12/31/pS9QKit.png)](https://imgse.com/i/pS9QKit)
-
-[![pS9QQRf.png](https://s1.ax1x.com/2022/12/31/pS9QQRf.png)](https://imgse.com/i/pS9QQRf)
-
-### 2.成功！！
-
-[![pS9QMJP.png](https://s1.ax1x.com/2022/12/31/pS9QMJP.png)](https://imgse.com/i/pS9QMJP)
-
-### 3.后记
-
-[![pS9QGLQ.png](https://s1.ax1x.com/2022/12/31/pS9QGLQ.png)](https://imgse.com/i/pS9QGLQ)
-
-## 一些注意事项
-
-#### Ⅰ. 不要计划降级！！否则会失去原有权益！也不要更换计划！！
-
-[![pS9Qlz8.png](https://s1.ax1x.com/2022/12/31/pS9Qlz8.png)](https://imgse.com/i/pS9Qlz8)
-
-[![pS9Q3QS.png](https://s1.ax1x.com/2022/12/31/pS9Q3QS.png)](https://imgse.com/i/pS9Q3QS)
-
-#### Ⅱ.  更不要他妈的更换邮箱！！！
-
-[![pS9Q8sg.png](https://s1.ax1x.com/2022/12/31/pS9Q8sg.png)](https://imgse.com/i/pS9Q8sg)
-
-## 送给萌新的一些话
-
-<font color=OrangeRed> Notion入门真的一点都不难。</font>
-
-<font color=Indigo>不要像个小学生初中生高中生一样到处问我为什么没有邮件，为什么手机端显示不出来，为什么没有计划升级这个选项，为什么没有汉化版本，为什么没有汉化教程。</font>
-
-<font color=LightSlateBlue>所有你的问题，只要在Google上搜一下都有结果。人人都从萌新小白走过来，人人都有疑问过，但不是人人都问过别人最基本的弱智问题。</font>
-
-<font color=MediumBlue> 你我的时间都很宝贵，有难度的问题联系我免费帮你解决。</font>
-
-<font color=Navy>  你要真是小学生初中生高中生，那他妈赶紧学习去玩啥Notion。真是不让人省心。</font>
-
-## 示例账号
-
-```html
-账号  apu06@uscm.edu.pl
-密码  ACKack123@123
-
-💡 账号无法登入时点击链接进入：
-https://show4everyone.notion.site/2ad46a935ed7451da8ce2e6620a6b422   （个人专业版）
-https://show4everyone1.notion.site/workspace-2c8c17e7cea940f7a0bda5ff97bf4f62   （团队空间版）
-```
+Assuming we have a file called `ocean.jpg` in `data/img/ocean.jpg`, the following line of code would generate the optimized image.
 
 ```
-💡 分享的目的是让小白自行探索了解是否有必要用notion。
-   不要私自改密码哈，否则直接取消分享。
+![ocean](/static/images/ocean.jpg)
 ```
 
-## 友情链接网站
+Alternatively, since we are using mdx, we can just use the image component directly! Note, that you would have to provide a fixed width and height. The `img` tag method parses the dimension automatically.
 
-[Notion 无法访问使用怎么办？ - Linmi](https://linmi.cc/6133.html)
+```js
+<Image alt="ocean" src="/static/images/ocean.jpg" width={256} height={128} />
+```
 
-[使用 Notion 搭配  flomo 构建信息输入整理体系](https://www.notion.so/Notion-flomo-9a6826ec313647c4964d1a1255fd9340)
+_Note_: If you try to save the image, it is in webp format, if your browser supports it!
+
+![ocean](/static/images/ocean.jpeg)
+
+<p>
+  Photo by [YUCAR
+  FotoGrafik](https://unsplash.com/@yucar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/sea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</p>
+
+# Benefits
+
+- Smaller image size with Webp (~30% smaller than jpeg)
+- Responsive images - the correct image size is served based on the user's viewport
+- Lazy loading - images load as they are scrolled to the viewport
+- Avoids [Cumulative Layout Shift](https://web.dev/cls/)
+- Optimization on demand instead of build-time - no increase in build time!
+
+# Limitations
+
+- Due to the reliance on `next/image`, unless you are using an external image CDN like Cloudinary or Imgix, it is practically required to use Vercel for hosting. This is because the component acts like a serverless function that calls a highly optimized image CDN.
+
+  If you do not want to be tied to Vercel, you can remove `imgToJsx` in `remarkPlugins` in `lib/mdx.js`. This would avoid substituting the default `img` tag.
+
+  Alternatively, one could wait for image optimization at build time to be supported. A different library, [next-optimized-images](https://github.com/cyrilwanner/next-optimized-images) does that, although it requires transforming the images through webpack which is not done here.
+
+- Images from external links are not passed through `next/image`
+- All images have to be stored in the `public` folder e.g `/static/images/ocean.jpeg`
