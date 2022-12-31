@@ -1,6 +1,6 @@
 ---
 name: HANG
-avatar: /static/images/avatar.png
+avatar: /static/images/author.png
 occupation: 家里蹲大学高级教授
 company: 家里蹲大学
 email: lzh20202002@gmail.com
